@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+body{
+font-family: 'Montserrat',sans-serif;
+background-image: url(https://i.ibb.co/Zgm2ZTH/background2.jpg);
+height: 100vh;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+color:rgb(59, 59, 59);
+margin:auto; 
+}
+
+img{
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+img:hover{
+  filter: grayscale(0%);
+}
+
+#contenedor{
+  background-color: rgb(0, 138, 23);
+width: 800px;
+height: 400px;
+text-align: center;
+position: absolute;
+inset: 0;
+margin: auto;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 14px 28px rgba(41, 41, 41, 0.25),   /* offset-x | offset-y | blur-radius | color */
+0 10px 10px rgba(41,41,41,0.25);
+}
+
+#calculadora{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.contenido{
+  position: relative;
+  top: 15%;
+  overflow: hidden;
+  padding: 40px;
+  color: #ffffff;
+  font-size: 13px;
+   
+}
+.contenido2{
+ 
+  position: relative;
+  top: 15%;
+  overflow: hidden;
+  padding: 40px;
+
+
+}
+
+
+.input-A {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: relative;
+  margin:auto;        /* margin: 0 0 0 120px; */
+  max-width: 240px;
+  }
+  
+.input-A label.number {
+    font-size: 0.75rem;
+    color: rgb(0, 138, 23);
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    top: 0.5rem;
+    margin: 0 0 0 45px;    /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 0 3px; 
+    background: #ffffff;
+    width: fit-content;
+  }
+
+
+  .input-A input[type=number].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px rgb(0, 138, 23) solid;
+    border-radius: 5px;
+    background: #ffffff;
+  }
+
+  .input-A input[type=number].input:focus {
+    outline: none;
+  }
+
+  /* esto es para ocultar botones para incrementar/decrementar el número  */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
+button {
+  position: relative;
+  top: 15px; left: 0px;
+
+
+  padding: 3% 7%;  /* arriba y abajo | izquierda y derecha */ /* establece el área de relleno en los cuatro lados */
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px; /* espaciado entre letras */
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.233);    /* offset-x | offset-y | blur-radius | color */
+  transition: all 0.3s ease 0s;  /* nombre de la propiedad | duración | función | retardo */
+  cursor: pointer; /* pointer es utilizado cundo se pone el puntero sobre el enlace o button */
+  outline: none;
+  
+}
+
+
+button:hover {
+  background-color: rgb(0, 138, 23);
+  box-shadow: 0px 15px 20px rgba(46, 229, 55, 0.459);
+  color: #fff;
+  transform: translateX(5px);  /*es para desplazar mi forma en X o Y*/
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+
+#error{
+color: rgb(255, 65, 65);
+font-weight: bold;
+display: none;
+}
+
+.resultado{
+  color: #0A81D1;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  position: relative;
+  top: 40px; left: 0px;
+  display: none;
+
+}
