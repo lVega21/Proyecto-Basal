@@ -130,7 +130,7 @@ button {
 
 button:hover {
   background-color: rgb(0, 138, 23);
-  box-shadow: 0px 15px 20px rgba(46, 229, 55, 0.459);
+  box-shadow: 0px 2px 15px rgba(46, 229, 55, 0.459);
   color: #fff;
   transform: translateX(5px);  /*es para desplazar mi forma en X o Y*/
 }
