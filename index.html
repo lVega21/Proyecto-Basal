@@ -1,192 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html lang="es  ">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Calculadora de hidratación</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Basal Calculator</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="H_Itaugua.png" />
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
-    <div class="container-form">
-      <div class="info">
-        <div class="info-childs">
-          <div>
-            <h2 class="mt-2">Bienvenido a tu calculadora Basal</h2>
-            <h5>¿Como se calcula?</h5>
-          </div>
-          <div class="info-onload">
-            <div>
-              <!-- ========== Start  Holliday-Segar ========== -->
-              <ul class="list-group" id="under-30-info">
-                <li class="list-group-item list-group-item-info">
-                  Se utilizo el metodo de <b> Holliday-Segar</b>
-                </li>
-                <li class="list-group-item">
-                  De 0kg a 10kg, se calcula 100cc por cada kilo.
-                </li>
-                <li class="list-group-item">
-                  Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta
-                  20kg
-                </li>
-                <li class="list-group-item">
-                  De 20kg para arriba, se suman 20cc por cada kilo adicional
-                </li>
-              </ul>
-            </div>
-            <!-- ========== End  Holliday-Segar ================= -->
 
-            <div>
-              <!-- ========== Start  Superficie corporal ========== -->
-              <ul class="list-group" id="over-30-info">
-                <li class="list-group-item list-group-item-info">
-                  Se utilizo el metodo de <b> Superficie corporal</b>
-                </li>
-                <li class="list-group-item">
-                  La SC se calcula ((<b id="info-peso">Peso</b> x 4)+7) / (<b
-                    id="info-peso2"
-                    >Peso</b
-                  >
-                  + 90)
-                </li>
-                <li class="list-group-item">
-                  Este resultado de SC se multiplica por <b>1500</b> y por
-                  <b>2000</b>
-                  para hallar el valor del volumen diario en cc, y el medico
-                  decide cual de los dos resultados utilizar <br /><small
-                    >Los peso se convierten a kg si estan en Lb</small
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- ========== End  Superficie corporal ========== -->
-            <div>
-              <!-- ========== Start  Sin peso ========== -->
-              <p id="info-sin-peso">
-                La hidratación basal es la cantidad de líquidos que una persona
-                requiere en 24 horas para mantener una hidratación de
-                mantenimiento, que es lo que mantiene el medio interno del
-                organismo y permite que el resto de los sistemas funcionen
-                <br />
-                <b>Segun el peso del pacienste se hacen diferentes calculos</b>
-              </p>
-              <!-- ========== End    Sin peso ========== -->
-            </div>
-          </div>
+  <div id="contenedor">
+    
+    <div id="calculadora">
 
-          <div>
-            <h5>Unidades de Medida</h5>
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
-            >
-              <input
-                type="radio"
-                class="btn-check"
-                name="unVolumen"
-                id="cc"
-                autocomplete="off"
-                checked
-              />
-              <label class="btn btn-outline-primary" for="cc">cc</label>
+      <div class="logoFondo"></div>
+      <img class="logo" src="programando.png"></img>
+      <img class="logo2" src="H_Itaugua.png"></img>
+      <img class="logo3" src="Ministerio de Salud.png"></img>
+      
+      <div  class="contenido2">
 
-              <input
-                type="radio"
-                class="btn-check"
-                name="unVolumen"
-                id="ml"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="ml">ml</label>
-            </div>
+        <h1 id="t1"> Hidratación Basal </h1>
+        <p>Complete todos los datos</p>
 
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
-            >
-              <input
-                type="radio"
-                class="btn-check"
-                name="unPeso"
-                id="Kg"
-                autocomplete="off"
-                checked
-              />
-              <label class="btn btn-outline-primary" for="Kg">Kg</label>
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="unPeso"
-                id="Lb"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="Lb">Lb</label>
-            </div>
-          </div>
-          <div class="check">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="autoConvert"
-                checked
-              />
-              <label class="form-check-label" for="autoConvert">
-                Convertir Automaticamente el peso al cambiar la unidad de medida
-              </label>
-            </div>
-          </div>
+        <div class="input-A">
+            <label for="input" class="number">Peso en kg</label>
+            <input type="number" placeholder="Ej: 25" name="input" class="input" id="Peso">
         </div>
-      </div>
 
-      <div class="form-peso">
-        <div class="form-peso-childs">
-          <h2>Ingrese el Peso</h2>
-          <form class="form-floating">
-            <input
-              type="number"
-              class="form-control mb-3"
-              id="pesoInput"
-              placeholder=""
-              value=""
-            />
-            <label id="label-peso" for="pesoInput">Peso en Kg </label>
-          </form>
-          <div id="resultados">
-            <div class="alert alert-primary" role="alert" id="hd-diario">-</div>
-            <div class="alert alert-primary" role="alert" id="hd-hora">-</div>
-            <div class="alert alert-warning" role="alert" id="hd-m/2">-</div>
-          </div>
+         <p class="item" id="error"> Error de datos</p>
+
+         <button>Calcular</button>
+
+         <p class="resultado" id="VD">70cc/hr</p>
+         <p class="resultado" id="MAN">m+m/2 : 105cc/hr</p>
+      
         </div>
-      </div>
+   
     </div>
+
+    <div class="contenido">
+      <div class="slider">
+        <div class="slideTrack">
+          <div class="slide">
+              <h1 id="t2">¿Como se calcula?</h1><br>
+                  <ul>
+                      <p><li>De 0 a 10Kg se calcula 100cc por cada kilo</li></p>
+                      <p><li>Se suman 50cc por cada kilo, hasta los 20kg</li></p>
+                      <p><li>De 20kg para arriba se suman 20ccpor cada kilo adicional</li></p>
+          </div>
+          <div class="slide">
+            <h1 id="t2">¿Como se calcula?</h1>
+                <ul>
+                  <p><li>La SC se calcula [[peso x 4] / [peso + 90]]</li></p>
+                  <p><li>Los resultados se multiplican por 1500 y 2000 para hallar el volumen diario en cc</li></p>
+                  <p><li>El medico decidira cual de los dos utilizar</li></p>
+        </div>
+      </div>
+  </div>
+</div>
+  <div class="borde"></div>
   </body>
-  <!-- <script src="calculadora.js"></script> -->
-  <script src="calculadora-ref.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+</html>
+
+
 </html>
