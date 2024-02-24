@@ -61,14 +61,14 @@ body{
 
 .borde{
 
-          width: 400px;
-          height: 230px;
+          width: 440px;
+          height: 255px;
           content: "";
           z-index: -1;
           background-color: #ffffff;
           position: relative;
-          right: -4%;
-          bottom: 35%;
+          right: -2%;
+          bottom: 45%;
           margin: auto;
           border-radius: 10px;
           overflow: hidden;
@@ -134,7 +134,7 @@ body{
 
 .contenido{
           position: relative;
-          top: 15%;
+          top: 18%;
           overflow: hidden;
           padding: 0px;
           color: #3b3b3b;
@@ -159,8 +159,8 @@ body{
 
 .slide{
 display: flex;
-animation: scroll 120s linear infinite;
--webkit-animation:  scroll 120s linear infinite;
+animation: scroll 50s linear infinite;
+-webkit-animation:  scroll 50s linear infinite;
 width: (400px*4);
 
 }
@@ -182,7 +182,7 @@ width: 400px;       /*ancho de los textos*/
 transform: translateY(0);}
 
 100% {-webkit-transform:translateX(calc(-400px *2));
-        transform: translateY(calc(-200px *2));}
+        transform: translateY(calc(-250px *2));}
 
 }
 
