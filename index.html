@@ -25,16 +25,16 @@
         <p>Complete todos los datos</p>
 
         <div class="input-A">
-            <label for="input" class="number">Peso en kg</label>
-            <input type="number" placeholder="Ej: 25" name="input" class="input" id="Peso">
+            <label for="peso" class="number">Peso en kg</label>
+            <input type="number" placeholder="Ej: 25"  class="input" id="peso">
         </div>
 
-         <p class="item" id="error"> Error de datos</p>
+         <p class="item" id="error"></p>
 
-         <button>Calcular</button>
+         <button onclick = "calculos()" id="boton" type="button">Calcular</button>
 
-         <p class="resultado" id="VD">70cc/hr</p>
-         <p class="resultado" id="MAN">m+m/2 : 105cc/hr</p>
+         
+         <p class="resultado" id="mante"></p>
       
         </div>
    
@@ -60,7 +60,10 @@
       </div>
   </div>
 </div>
-  <div class="borde"></div>
+      <div class="borde"></div>
+
+
+<script type="text/javascript" src="script.js"></script>
   </body>
 </html>
 

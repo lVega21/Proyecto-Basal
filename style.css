@@ -158,12 +158,13 @@ body{
 }
 
 .slide{
-display: flex;
-animation: scroll 50s linear infinite;
--webkit-animation:  scroll 50s linear infinite;
-width: (400px*4);
+        display: flex;
+        animation: scroll 23s linear infinite;
+        -webkit-animation:  scroll 23s linear infinite;
+        width: (400px*4);
+        overflow-x: auto;
 
-}
+ }
 
 .slider .slide{
 width: 400px;       /*ancho de los textos*/
@@ -173,16 +174,16 @@ width: 400px;       /*ancho de los textos*/
 
 .slider .slide p {
         width: 100%;
-        
-}
+    
+} 
         
 @keyframes scroll{
 0% {
         -webkit-transform:translateX(0);
 transform: translateY(0);}
 
-100% {-webkit-transform:translateX(calc(-400px *2));
-        transform: translateY(calc(-250px *2));}
+100% {-webkit-transform:translateX(calc(-400px));
+        transform: translateY(calc(-250px));}
 
 }
 
@@ -233,6 +234,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 
 
+
+
+
 button {
           position: relative;
           top: 15px; left: 0px;
@@ -265,19 +269,43 @@ button:active {
 }
 
 
+
+
+
+
+
+
 #error{
-          color: rgb(255, 65, 65);
+          color: #fff;
           font-weight: bold;
-          display: none;
+          display: block;
+          background:#fd4e41;
+          border-radius: 2px;
+          font-size: 10px;
+          position:relative;
+          top: 0px; left: 86px;
+          width: 53%;
+        
+
+
 }
+
 
 .resultado{
           color: #0A81D1;
-          font-size: 25px;
+          font-size: 20px;
           font-weight: bold;
           margin-bottom: 5px;
           position: relative;
-          top: 40px; left: 0px;
-          display: none;
+          bottom: -10px; left: 0px;
+          display: block;
 
 }
+
+/* .item{
+background:#ff0000;
+color: white;
+border-radius: 5px;
+width: 320px;
+  
+}  */
