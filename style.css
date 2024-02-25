@@ -74,20 +74,39 @@ body{
 
 .borde{
 
-          width: 440px;
-          height: 255px;
+          width: 520px;
+          height: 400px;
           content: "";
           z-index: -1;
-          background-color: #ffffff;
-          position: relative;
-          right: -2%;
-          bottom: 45%;
+          background-image: url(imagens/programando2.png);
+          background-size: 90%;
+          background-repeat: no-repeat;
+          position: absolute;
+          right: -7%;
+          bottom: 0%;
           margin: auto;
-          border-radius: 10px;
+          opacity: 5%;
           overflow: hidden;
-          box-shadow: 0 14px 28px hsla(0, 0%, 16%, 0.25), 0 10px 10px rgba(41,41,41,0.25);
+          /* box-shadow: 0 14px 28px hsla(0, 0%, 16%, 0.25), 0 10px 10px rgba(41,41,41,0.25); */
   
 }
+.borde_1{
+
+        width: 440px;
+        height: 255px;
+        content: "";
+        z-index: -1;
+        background-color: #ff0000;
+        position: absolute;
+        right: -1%;
+        bottom: 19%;
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 14px 28px hsla(0, 0%, 16%, 0.25), 0 10px 10px rgba(41,41,41,0.25);
+
+}
+
 
 
 .back{
