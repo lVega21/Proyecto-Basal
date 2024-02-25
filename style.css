@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
+
+
 body{
       font-family: 'Montserrat',sans-serif;
       background-image: url(https://i.ibb.co/Zgm2ZTH/background2.jpg);
@@ -12,6 +14,9 @@ body{
       color:#3b3b3b;
       margin:auto; 
 }
+
+
+
 
 #contenedor{
           isolation: isolate;        
@@ -28,6 +33,10 @@ body{
              /* offset-x | offset-y | blur-radius | color */
 }
 
+
+
+
+
 #calculadora{
         isolation: isolate; 
           background-color: rgb(255, 255, 255);
@@ -35,6 +44,11 @@ body{
           height: 100%;
           float: left;
 }
+
+
+
+
+
 
 #t1{
   
@@ -52,8 +66,7 @@ body{
   
 }
   
-::marker{
-        color: #6b6b6b ;}   /*cambio de color de los marcadores de lista*/
+
 
 
 
@@ -75,6 +88,25 @@ body{
           box-shadow: 0 14px 28px hsla(0, 0%, 16%, 0.25), 0 10px 10px rgba(41,41,41,0.25);
   
 }
+
+
+.back{
+     
+        width: 50%;
+        height: 100%;
+        content: "";
+        opacity: 3%;
+        z-index: -1;
+        position: absolute;
+        right: 450px;
+        bottom: -160px;
+        z-index: -1;;
+        
+}
+
+
+
+
 
 
 .logoFondo{
@@ -132,6 +164,25 @@ body{
         margin: auto;
 }
 
+
+
+
+
+.contenido2{
+          position: relative;
+          top: -35%;
+          overflow: hidden;
+          padding: 40px;
+}
+
+
+
+
+
+
+::marker{
+        color: #6b6b6b ;}   /*cambio de color de los marcadores de lista*/
+
 .contenido{
           position: relative;
           top: 18%;
@@ -142,13 +193,6 @@ body{
           left: 3%;
    
 }
-.contenido2{
-          position: relative;
-          top: -35%;
-          overflow: hidden;
-          padding: 40px;
-}
-
 
 .slider{
 
@@ -190,6 +234,8 @@ transform: translateY(0);}
 
 
 
+
+
 .input-A {
           display: flex;
           flex-direction: column;
@@ -222,7 +268,7 @@ transform: translateY(0);}
           background: #ffffff;
   }
 
-  .input-A input[type=number].input:focus {
+.input-A input[type=number].input:focus {
           outline: none;
   }
 
@@ -231,6 +277,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
           -webkit-appearance: none; 
           margin: 0; 
 }
+
+
 
 
 
@@ -276,20 +324,28 @@ button:active {
 
 
 #error{
-          color: #fff;
-          font-weight: bold;
-          display: block;
-          background:#fd4e41;
-          border-radius: 2px;
-          font-size: 10px;
-          position:relative;
-          top: 0px; left: 86px;
-          width: 53%;
-        
+        color: #ffffff;
+        font-weight: bold;
+        display: block;
+        background:#f73527;
+        border-radius: 2px;
+        font-size: 10px;
+        position:relative;
+        top: 0px; left: 86px;
+        width: 53%;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+display: none;
+}
+
+#error.show{
+display: block;
+
+
+
 
 
 }
-
 
 .resultado{
           color: #0A81D1;
@@ -301,11 +357,3 @@ button:active {
           display: block;
 
 }
-
-/* .item{
-background:#ff0000;
-color: white;
-border-radius: 5px;
-width: 320px;
-  
-}  */
