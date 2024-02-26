@@ -55,6 +55,7 @@ body{
           background: linear-gradient(to left top, #525252, #8a8a8a); /* 45 grados,comenzando en segundo color al primero */
           background-clip: text;
           color: transparent;
+          
 
 }
 
@@ -63,6 +64,7 @@ body{
           background: linear-gradient(to left top, #525252, #8a8a8a); /* 45 grados,comenzando en segundo color al primero */
           background-clip: text;
           color: transparent;
+          
   
 }
   
@@ -96,7 +98,7 @@ body{
         height: 255px;
         content: "";
         z-index: -1;
-        background-color: #ff0000;
+        background-color: #ffffff;
         position: absolute;
         right: -1%;
         bottom: 19%;
