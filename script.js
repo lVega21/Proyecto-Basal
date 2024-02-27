@@ -48,12 +48,12 @@ matM_Sc=Math.ceil(matD_SC + (matD_SC / 2) )
 matD2_SC=Math.ceil( ( ( ( ( peso*4) +7) *2000) / (peso+90) )/24);
 matM2_SC=Math.ceil(matD2_SC + (matD2_SC / 2) );        
 
-document.getElementById('mante').textContent = 'x1500:\t' + matD_SC + '\tcc/hr\t' + matM_Sc + 'cc/hr\nx2000:\t' + 
-                                                matD2_SC + '\tcc/hr\t'+matM2_SC+'\tcc/hr';}
-
+document.getElementById('mante').textContent = 'x1500:\t' + matD_SC + '\tcc/hr\t' + matM_Sc + '\tcc/hr'
+document.getElementById('mante_2').textContent = 'x2000:\t' + matD2_SC + '\tcc/hr\t'+matM2_SC+'\tcc/hr';}
 else {
   
-  document.getElementById('mante').textContent = matD_HS + "\tcc/hr\nm+m/2:\t" + matM_HS + "\tcc/hr\t";}
+  document.getElementById('mante').textContent = matD_HS + "\tcc/hr\t";
+  document.getElementById('mante_2').textContent ="\tm+m/2:\t" + matM_HS + "\tcc/hr\t";}
 }
 
 
