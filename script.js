@@ -4,22 +4,22 @@ function calculos(){
         var valorDiario;
         var matD_HS, matM_HS; 
         var matD_SC, matM_SC, matD2_SC, matM2_SC;
-        var mensajeError = document.getElementById('error');
+      
 
 
 if ( isNaN(peso) || peso<1){         //está verificando si "peso" no es un número o si inputPeso está vacío
 
-        mensajeError.innerText= "Valor no valido, intentelo de nuevo";
-        mensajeError.classList.add("show");
-        setTimeout (function(){          //llamamos a la funcion y le decimos que no muestre en pantalla luego de un tiempo con el settimeout.
-        mensajeError.classList.remove("show");},1500);
+    document.getElementById('error').innerText= "Valor no valido, intentelo de nuevo";
+    document.getElementById('error').classList.add("show");
+    setTimeout (function(){          //llamamos a la funcion y le decimos que no muestre en pantalla luego de un tiempo con el settimeout.
+    document.getElementById('error').classList.remove("show");},1500);
         
 
     // mensajeError.textContent = "Valor no valido, intentelo de nuevo";
 return;
 
 }else{
-    mensajeError.textContent = "";
+    document.getElementById('error').textContent = "";
 }
 
 
